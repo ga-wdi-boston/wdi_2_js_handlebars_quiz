@@ -2,19 +2,19 @@
   "foods": [
     {
       "id": 1,
-      "name": "pickles",
+      "name": "Pickles",
       "texture": "crunchy",
       "pairing": "ketchup"
     },
     {
       "id": 2,
-      "name": "buffalo chicken",
+      "name": "Buffalo chicken",
       "texture": "fleshy",
       "pairing": "waffles"
     },
     {
       "id": 3,
-      "name": "croutons",
+      "name": "Croutons",
       "texture": "crunchy",
       "pairing": "italian dressing"
     }
@@ -43,23 +43,23 @@
     {
       "id": 1,
       "name": "Wet Hot American Summer",
-      "Director": "David Wain",
-      "Writers": [{"name": "Michael Showalter"}, {"name": "David Wain"}],
-      "Tagline": "High Times. Hard Bodies. Soft Rock."
+      "director": "David Wain",
+      "writers": [{"name": "Michael Showalter"}, {"name": "David Wain"}],
+      "tagline": "High Times. Hard Bodies. Soft Rock."
     },
     {
       "id": 2,
       "name": "Akira",
-      "Director": "Katsuhiro Otomo",
-      "Writers": [{"name": "Katsuhiro Otomo"}, {"name": "Izo Hashimoto"}],
-      "Tagline": "Neo-Tokyo is about to E.X.P.L.O.D.E."
+      "director": "Katsuhiro Otomo",
+      "writers": [{"name": "Katsuhiro Otomo"}, {"name": "Izo Hashimoto"}],
+      "tagline": "Neo-Tokyo is about to E.X.P.L.O.D.E."
     },
     {
       "id": 3,
       "name": "Holy Mountain",
-      "Director": "Alejandro Jodorowsky",
-      "Writers": [{"name": "Alejandro Jodorowsky"}],
-      "Tagline": "I am beyond taglines."
+      "director": "Alejandro Jodorowsky",
+      "writers": [{"name": "Alejandro Jodorowsky"}],
+      "tagline": "I am beyond taglines."
     }
   ]
 }

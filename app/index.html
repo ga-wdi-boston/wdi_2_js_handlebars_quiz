@@ -20,30 +20,42 @@
     <![endif]-->
     <h1>Max's Page of Favorite Things</h1>
 
-    <h4>Foods</h4>
+    <h2>Foods</h2>
+    <div id="foods"></div>
 
-    <h4>Songs</h4>
+    <h2>Songs</h2>
     <div id="songs"></div>
 
-    <h4>Movies</h4>
+    <h2>Movies</h2>
+    <div id="movies"></div>
 
 
 
     <!-- food script template goes here -->
-
-
-    <!-- food script template ends here -->
-
-
-    <script id="song-template" type="text/x-handlebars-template">
-        {{#each songs}}
-            <p>{{name}} by {{band}} on {{album}}</p>
+    <script id="food-template" type="text/x-handlebars-template">
+        {{#each foods}}
+            <h4>{{name}}</h4>
+            <p>Texture: {{texture}}</p>
+            <p>Pairing: {{pairing}}</p>
         {{/each}}
     </script>
-
+    <!-- food script template ends here -->
+    <script id="song-template" type="text/x-handlebars-template">
+        {{#each songs}}
+            <h4>{{name}}</h4>
+            <p>Band: {{band}}</p>
+            <p>Album: {{album}}</p>
+        {{/each}}
+    </script>
     <!-- movie script template goes here -->
-
-
+      <script id="movie-template" type="text/x-handlebars-template">
+        {{#each movies}}
+            <h4>{{name}}</h4>
+            <p>Tagline: {{tagline}}</p>
+            <p>Directed by: {{director}}</p>
+            <p>Writers: {{#each writers}}{{name}} {{/each}}</p>
+        {{/each}}
+    </script>
     <!-- movie script template ends here -->
 
 
