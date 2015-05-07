@@ -22,4 +22,5 @@ Max wrote all of the html to render his favorite songs, but he forgot how to wri
 
 #### Question 3:
 
-Stupid Max. He forgot ALL of the code to render his favorite movies! Good thing he has you guys available to do the work for him.
+Stupid Max. He forgot ALL of the code to render his favorite movies! Good thing he has you guys available to do the work for him. HINT: if you look at `lib/db.json`, you will see that the 'writers' holds an array of writer objects, each with their own name attribute. How do we iterate through objects?
+

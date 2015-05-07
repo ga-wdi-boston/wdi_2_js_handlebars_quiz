@@ -44,21 +44,21 @@
       "id": 1,
       "name": "Wet Hot American Summer",
       "Director": "David Wain",
-      "Writers": ["Michael Showalter", "David Wain"],
+      "Writers": [{"name": "Michael Showalter"}, {"name": "David Wain"}],
       "Tagline": "High Times. Hard Bodies. Soft Rock."
     },
     {
       "id": 2,
       "name": "Akira",
       "Director": "Katsuhiro Otomo",
-      "Writers": ["Katsuhiro Otomo", "Izo Hashimoto"],
+      "Writers": [{"name": "Katsuhiro Otomo"}, {"name": "Izo Hashimoto"}],
       "Tagline": "Neo-Tokyo is about to E.X.P.L.O.D.E."
     },
     {
       "id": 3,
       "name": "Holy Mountain",
       "Director": "Alejandro Jodorowsky",
-      "Writers": ["Alejandro Jodorowsky"],
+      "Writers": [{"name": "Alejandro Jodorowsky"}],
       "Tagline": "I am beyond taglines."
     }
   ]

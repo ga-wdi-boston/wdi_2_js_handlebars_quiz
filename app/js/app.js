@@ -2,7 +2,7 @@
 
 var favorites = (function(){
 
-  var getFavorites = function(){
+  var _getFavorites = function(){
     $.getJSON( "lib/db.json").success(function(response){
       _renderFoods(response.foods);
       _renderMovies(response.movies);
@@ -31,12 +31,16 @@ var favorites = (function(){
     // your code ends here
   };
 
+  var init = function(){
+    _getFavorites();
+  };
+
   return {
-    getFavorites: getFavorites
+    init: init
   };
 
 })();
 
 $(document).ready(function(){
-  favorites.getFavorites();
+  favorites.init();
 });
