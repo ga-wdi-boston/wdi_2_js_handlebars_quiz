@@ -1,25 +1,42 @@
 'use strict';
 
-var trace = function(){
-  for(var i = 0; i < arguments.length; i++){
-    console.log(arguments[i]);
-  }
-};
+var favorites = (function(){
 
-var App = App || {};
+  var getFavorites = function(){
+    $.getJSON( "lib/db.json").success(function(response){
+      _renderFoods(response.foods);
+      _renderMovies(response.movies);
+      _renderSongs(response.songs);
+    });
+  };
 
-App.square = function(x){
-  return x * x;
-};
+  var _renderFoods = function(foods){
+    var template = Handlebars.compile($('#food-template').html());
+    $('#foods').html(template({
+      foods: foods
+    }));
+  };
 
-App.cube = function(x){
-  return x * x * x;
-};
+  var _renderMovies = function(movies){
+    // your code starts here
 
-App.greet = function(string){
-  return typeof string !== 'undefined' ? 'Hello ' + string : 'Hello World';
-};
+
+    // your code ends here
+  };
+
+  var _renderSongs = function(songs){
+    // your code starts here
+
+
+    // your code ends here
+  };
+
+  return {
+    getFavorites: getFavorites
+  };
+
+})();
 
 $(document).ready(function(){
-  trace('hello world');
+  favorites.getFavorites();
 });

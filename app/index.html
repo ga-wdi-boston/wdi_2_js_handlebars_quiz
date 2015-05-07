@@ -18,7 +18,31 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <h1>My new repo template for javascript</h1>
+    <h1>Max's Page of Favorite Things</h1>
+    <h4>Foods</h4>
+
+    <h4>Songs</h4>
+    <div id="songs"></div>
+    <h4>Movies</h4>
+
+
+
+    <!-- food script template goes here -->
+
+
+    <!-- food script template ends here -->
+
+
+    <script id="song-template" type="text/x-handlebars-template">
+        {{#each songs}}
+            <p>{{name}} by {{band}} on {{album}}</p>
+        {{/each}}
+    </script>
+
+    <!-- movie script template goes here -->
+
+
+    <!-- movie script template ends here -->
 
 
     <!-- build:js(.) scripts/oldieshim.js -->
@@ -32,6 +56,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/handlebars/handlebars.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
