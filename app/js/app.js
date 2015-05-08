@@ -21,7 +21,7 @@ var favorites = (function(){
   var _renderMovies = function(movies){
     // your code starts here
     var template = Handlebars.compile($('#movies-template').html());
-    $('#song').html(template({
+    $('#movie').html(template({
       movies: movies
     }));
 
@@ -31,7 +31,7 @@ var favorites = (function(){
   var _renderSongs = function(songs){
     // your code starts here
     var template = Handlebars.compile($('#songs-template').html());
-    $('#movie').html(template({
+    $('#song').html(template({
       songs: songs
     }));
     // your code ends here
