@@ -20,21 +20,34 @@
     <![endif]-->
     <h1>Max's Page of Favorite Things</h1>
 
-    <h4>Foods</h4>
-
-    <h4>Songs</h4>
-    <div id="songs"></div>
-
-    <h4>Movies</h4>
-
-
-
-    <!-- food script template goes here -->
-
-
-    <!-- food script template ends here -->
+    <h2>Foods</h2>
+    <div id="foods"></div>
+    <script id="songs-template" type ="text/x-handlebars-template">
+        {{#each foods}}
+            <h4>{{name}}</h4>
+            <h4>{{texture}}</h4>
+            <h4>{{pairing}}</h4>
+        {{/each}}
+    </script>
 
 
+
+    <h2>Movies</h2>
+    <div id="movies"></div>
+    <script id="movies-template" type ="text/x-handlebars-template">
+        {{#each movies}}
+            <p>{{name}}</p>
+            <h4>{{directors}}</h4>
+            <h4>{{forEach(writers[])}}</h4>
+            <h4>{{tagline}}</h4>
+
+
+        {{/each}}
+    </script>
+
+
+
+    <h2>Songs</h2>
     <script id="song-template" type="text/x-handlebars-template">
         {{#each songs}}
             <p>{{name}} by {{band}} on {{album}}</p>

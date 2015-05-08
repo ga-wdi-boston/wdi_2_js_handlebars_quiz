@@ -11,25 +11,28 @@ var favorites = (function(){
   };
 
   var _renderFoods = function(foods){
-    var template = Handlebars.compile($('#food-template').html());
-    $('#foods').html(template({
+    var template = Handlebars.compile($('#foods').html());
+    var result = template({
       foods: foods
-    }));
-  };
+    });
+    $('#foods').html(result);
+});
 
   var _renderMovies = function(movies){
-    // your code starts here
-
-
-    // your code ends here
-  };
+    var template = Handlebars.compile($('#movies').html());
+    var result = template({
+      movies: movies
+    });
+    $('#movies').html(result);
+}));
 
   var _renderSongs = function(songs){
-    // your code starts here
-
-
-    // your code ends here
-  };
+    var template = Handlebars.compile($('#songs').html());
+    var result = template({
+      songs: songs
+    });
+    $('#songs').html(result);
+}));
 
   var init = function(){
     _getFavorites();
