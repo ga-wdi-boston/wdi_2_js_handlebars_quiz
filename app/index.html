@@ -20,19 +20,45 @@
     <![endif]-->
     <h1>Max's Page of Favorite Things</h1>
 
-    <h4>Foods</h4>
-
-    <h4>Songs</h4>
-    <div id="songs"></div>
-
     <h4>Movies</h4>
 
+    <!-- movie script template goes here -->
 
+    <div id="content"></div>
+
+    <script id="movies-index" type="text/x-handlebars-template">
+        {{#each movies}}
+            <h2>{{name}}</h2>
+            <h3>{{[]}}</h3>
+            <h3>{{tagline}}</h3>
+        {{/each}}
+    </script>
+
+
+    <!-- movie script template ends here -->
+
+
+
+
+    <h4>Foods</h4>
+
+        <div id="content"></div>
+
+        <script id="foods-index" type="text/x-handlebars-template">
+            {{#each foods}}
+                <h2>{{name}}</h2>
+                <h3>{{texture}}</h3>
+                <h3>{{pairing}}</h3>
+            {{/each}}
+        </script>
 
     <!-- food script template goes here -->
 
 
     <!-- food script template ends here -->
+
+    <h4>Songs</h4>
+    <div id="songs"></div>
 
 
     <script id="song-template" type="text/x-handlebars-template">
@@ -41,10 +67,7 @@
         {{/each}}
     </script>
 
-    <!-- movie script template goes here -->
 
-
-    <!-- movie script template ends here -->
 
 
     <!-- build:js(.) scripts/oldieshim.js -->

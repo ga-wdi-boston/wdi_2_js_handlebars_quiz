@@ -19,15 +19,24 @@ var favorites = (function(){
 
   var _renderMovies = function(movies){
     // your code starts here
-
+    console.log(movies);
+  var template = Handlebars.compile($('#movies-index').html());
+  $('#movies').html(template({
+    movies: movies
+  });
+    $('#content').html(result);
 
     // your code ends here
   };
 
   var _renderSongs = function(songs){
     // your code starts here
-
-
+    console.log(songs);
+  var template = Handlebars.compile($('#songs-index').html());
+  $('#songs').html(template({
+    songs: songs
+  }));
+    $('#content').html(result);
     // your code ends here
   };
 
