@@ -19,7 +19,7 @@ var favorites = (function(){
 
   var _renderMovies = function(movies){
     // your code starts here
-
+    var template = Handlebars.compile($('#foods').html());
 
     // your code ends here
   };
