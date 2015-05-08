@@ -55,9 +55,9 @@
     <script id="movies-template" type="text/x-handlebars-template">
         {{#each movies}}
             <h2>{{name}}</h2>
-           <h4>{{director}}</h4>
-           <p>{{writers}} by {{name}}</p>
-           <p>{{tagline}}</p>
+           <h4>{{Director}}</h4>
+           {{#each Writers}}<p>{{name}}</p>{{/each}}
+           <p>{{Tagline}}</p>
         {{/each}}
     </script>
 
