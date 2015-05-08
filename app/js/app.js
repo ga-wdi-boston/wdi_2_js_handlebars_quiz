@@ -20,13 +20,12 @@ var favorites = (function(){
   var _renderMovies = function(movies){
     // your code starts here
 
-
     // your code ends here
   };
 
   var _renderSongs = function(songs){
     // your code starts here
-
+    var template = Handlebars.compile($(#))
 
     // your code ends here
   };

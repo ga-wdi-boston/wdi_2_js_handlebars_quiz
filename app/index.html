@@ -21,12 +21,21 @@
     <h1>Max's Page of Favorite Things</h1>
 
     <h4>Foods</h4>
+    <div id="foods"></div>
 
+    <script id="foods-index" type="text/x-handlebars-template">
+      {{#each foods}}
+        <img class="foods" src={{url}}/>
+        <h2>{{name}}</h2>
+        <h4>{{texture}}</h4>
+        <p><em>{{pairing}}</em></p>
+      {{/each}}
+    </script>
     <h4>Songs</h4>
     <div id="songs"></div>
 
     <h4>Movies</h4>
-
+    <div id="movies"></div>
 
 
     <!-- food script template goes here -->
