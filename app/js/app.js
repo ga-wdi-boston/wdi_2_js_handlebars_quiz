@@ -11,6 +11,7 @@ var favorites = (function(){
   };
 
   var _renderFoods = function(foods){
+    console.log(foods);
     var template = Handlebars.compile($('#food-template').html());
     $('#foods').html(template({
       foods: foods
@@ -19,14 +20,20 @@ var favorites = (function(){
 
   var _renderMovies = function(movies){
     // your code starts here
-
+    var template = Handlebars.compile($('#movies-template').html());
+    $('#movies').html(template({
+      movies: movies
+    }));
 
     // your code ends here
   };
 
   var _renderSongs = function(songs){
     // your code starts here
-
+    var template = Handlebars.compile($('#song-template').html());
+    $('#songs').html(template({
+      songs: songs
+    }));
 
     // your code ends here
   };
