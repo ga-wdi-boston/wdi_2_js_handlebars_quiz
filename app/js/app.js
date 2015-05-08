@@ -25,10 +25,14 @@ var favorites = (function(){
   };
 
   var _renderSongs = function(songs){
-    // your code starts here
 
+    var tempFunc = Handlebars.compile(
+      $('#song-template').html());
+var result = tempFunc({
+  songs:favorites
+});
 
-    // your code ends here
+    $('#songs').html(result);
   };
 
   var init = function(){
