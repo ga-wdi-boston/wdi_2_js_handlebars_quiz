@@ -19,11 +19,11 @@ var favorites = (function(){
 
   var _renderMovies = function(movies){
     // your code starts here
+
     var template = Handlebars.compile($('#movie-template').html());
     $('#movies').html(template({
       movies: movies
     }));
-    console.log(movies);
     // your code ends here
   };
 

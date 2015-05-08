@@ -56,7 +56,9 @@
         {{#each movies}}
             <h1>{{name}}</h1>
             <h2>{{Director}}</h2>
-            <h2>{{Writers}}</h2>
+            {{#each Writers}}
+                <h2>{{name}}</h2>
+            {{/each}}
             <h2>{{Tagline}}</h2>
         {{/each}}
     </script>
