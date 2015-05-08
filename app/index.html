@@ -20,26 +20,26 @@
     <![endif]-->
     <h1>Max's Page of Favorite Things</h1>
 
-    <h4>Foods</h4>
+    <h2>Foods</h2>
     <div id="foods"></div>
     <script id="songs-template" type ="text/x-handlebars-template">
         {{#each foods}}
-            <p>{{name}}</p>
-            <p>{{texture}}</p>
-            <p>{{pairing}}</p>
+            <h4>{{name}}</h4>
+            <h4>{{texture}}</h4>
+            <h4>{{pairing}}</h4>
         {{/each}}
     </script>
 
 
 
-    <h4>Movies</h4>
+    <h2>Movies</h2>
     <div id="movies"></div>
     <script id="movies-template" type ="text/x-handlebars-template">
         {{#each movies}}
             <p>{{name}}</p>
-            <p>{{directors}}</p>
-            <p>{{forEach(writers[])}}</p>
-            <p>{{tagline}}</p>
+            <h4>{{directors}}</h4>
+            <h4>{{forEach(writers[])}}</h4>
+            <h4>{{tagline}}</h4>
 
 
         {{/each}}
@@ -47,7 +47,7 @@
 
 
 
-    <h4>Songs</h4>
+    <h2>Songs</h2>
     <script id="song-template" type="text/x-handlebars-template">
         {{#each songs}}
             <p>{{name}} by {{band}} on {{album}}</p>
