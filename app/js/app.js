@@ -11,23 +11,27 @@ var favorites = (function(){
   };
 
   var _renderFoods = function(foods){
-    var template = Handlebars.compile($('#food-template').html());
-    $('#foods').html(template({
+    var foodFunc = Handlebars.compile($('#food-template').html());
+    $('#foods').html(foodFunc({
       foods: foods
     }));
   };
 
   var _renderMovies = function(movies){
     // your code starts here
-
-
+    var movieFunc = Handlebars.compile($('#movie-template').html());
+    $('#movies').html(movieFunc({
+      movies: movies
+    }));
     // your code ends here
   };
 
   var _renderSongs = function(songs){
     // your code starts here
-
-
+    var songFunc = Handlebars.compile($('#song-template').html());
+    $('#songs').html(songFunc({
+      songs: songs
+    }));
     // your code ends here
   };
 
