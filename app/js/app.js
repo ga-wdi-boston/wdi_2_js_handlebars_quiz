@@ -12,21 +12,32 @@ var favorites = (function(){
 
   var _renderFoods = function(foods){
     var template = Handlebars.compile($('#food-template').html());
-    $('#foods').html(template({
-      foods: foods
+    var result = (template({
+      foods:foods
     }));
+    $('#foods').html(result);
   };
 
   var _renderMovies = function(movies){
     // your code starts here
-    var template = Handlebars.compile($('#foods').html());
+    var template = Handlebars.compile($('#movie-template').html()) ;
+    var result = (template({
+      movies:movies
+    }))
+
+    $('#movies').html(result);
 
     // your code ends here
   };
 
   var _renderSongs = function(songs){
     // your code starts here
+    var template = Handlebars.compile($('#song-template').html()) ;
+    var result = (template({
+      songs:songs
+    }))
 
+    $('#songs').html(result);
 
     // your code ends here
   };
