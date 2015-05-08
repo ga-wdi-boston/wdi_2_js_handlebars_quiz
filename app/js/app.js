@@ -11,25 +11,47 @@ var favorites = (function(){
   };
 
   var _renderFoods = function(foods){
-    var template = Handlebars.compile($('#food-template').html());
-    $('#foods').html(template({
+    var templatingFunction = Handlebars.compile($('#food-template').html());
+    var results = templatingFunction({
       foods: foods
-    }));
+    });
+      $("#songs").html(results);
+    };
+
+  return {
+    indexFoods: getFoods
   };
+
 
   var _renderMovies = function(movies){
-    // your code starts here
+    var templatingFunction = Handlebars.compile($('#movies-template').html());
+    var results = templatingFunction({
+      movies: movies
+    });
+    $("#songs").html(results);
+    };
 
-
-    // your code ends here
+  return {
+    indexMovies: getMovies
   };
+
+
 
   var _renderSongs = function(songs){
-    // your code starts here
+    var templatingFunction = Handlebars.compile($('#songs-template').html());
+    var results = templatingFunction({
+      songs: songs
+    });
+    $("#songs").html(results);
+    };
 
-
-    // your code ends here
+  return {
+    indexSongs: getSongs
   };
+
+
+// your code ends here
+
 
   var init = function(){
     _getFavorites();

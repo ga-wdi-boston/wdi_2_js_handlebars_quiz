@@ -29,7 +29,14 @@
 
 
 
-    <!-- food script template goes here -->
+    <script id="foods-index" type="text/x-handlebars-template">
+        {{#each foods}}
+                <h1>{{name}}</h1>
+                <h2>{{texture}}</h2>
+                <h4>{{pairing}}</h4>
+
+        {{/each}}
+    </script>
 
 
     <!-- food script template ends here -->
@@ -41,7 +48,15 @@
         {{/each}}
     </script>
 
-    <!-- movie script template goes here -->
+    <script id="movies-index" type="text/x-handlebars-template">
+        {{#each movies}}
+                <h1>{{name}}</h1>
+                <h2>{{Director}}</h2>
+                <h4>{{Writer}}</h4>
+                <p>{{Tagline}}</p>
+
+        {{/each}}
+    </script>
 
 
     <!-- movie script template ends here -->
