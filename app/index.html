@@ -21,15 +21,25 @@
     <h1>Max's Page of Favorite Things</h1>
 
     <h4>Foods</h4>
+    <div id="foods"></div>
 
     <h4>Songs</h4>
     <div id="songs"></div>
 
     <h4>Movies</h4>
+    <div id="movies"></div>
 
 
 
     <!-- food script template goes here -->
+
+    <script id="food-template" type="text/x-handlebars-template">
+        {{#each foods}}
+            <h1>{{name}}</h1>
+            <h2>{{pairing}}</h2>
+            <h2>{{texture}}</h2>
+        {{/each}}
+    </script>
 
 
     <!-- food script template ends here -->
@@ -42,7 +52,14 @@
     </script>
 
     <!-- movie script template goes here -->
-
+    <script id="movie-template" type="text/x-handlebars-template">
+        {{#each movies}}
+            <h1>{{name}}</h1>
+            <h2>{{Director}}</h2>
+            <h2>{{Writers}}</h2>
+            <h2>{{Tagline}}</h2>
+        {{/each}}
+    </script>
 
     <!-- movie script template ends here -->
 
