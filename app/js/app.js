@@ -18,17 +18,18 @@ var favorites = (function(){
   };
 
   var _renderMovies = function(movies){
-    // your code starts here
-
-
-    // your code ends here
+    var template = Handlebars.compile($('#movie-template').html());
+    $('#movies').html(template({
+      movies: movies
+    }));
   };
 
   var _renderSongs = function(songs){
     // your code starts here
-
-
-    // your code ends here
+    var template = Handlebars.compile($('#song-template').html());
+    $('#songs').html(template({
+      songs: songs
+    }));
   };
 
   var init = function(){
