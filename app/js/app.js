@@ -11,7 +11,7 @@ var favorites = (function(){
   };
 
   var _renderFoods = function(foods){
-    var template = Handlebars.compile($('#food-template').html());
+    var template = Handlebars.compile($('#food-index').html());
     var result = (template({
       foods:foods
     }));
@@ -32,7 +32,7 @@ var favorites = (function(){
 
   var _renderSongs = function(songs){
     // your code starts here
-    var template = Handlebars.compile($('#song-template').html()) ;
+    var template = Handlebars.compile($('#song-template').html());
     var result = (template({
       songs:songs
     }))
