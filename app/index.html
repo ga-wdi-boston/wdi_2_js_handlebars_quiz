@@ -18,24 +18,33 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
     <h1>Max's Page of Favorite Things</h1>
 
     <h4>Foods</h4>
-
+   <div id="food"></div>
     <h4>Songs</h4>
-    <div id="songs"></div>
+    <div id="song"></div>
 
     <h4>Movies</h4>
-
+   <div id="movie"></div>
 
 
     <!-- food script template goes here -->
+    <script id="food-template" type="text/x-handlebars-template">
+      {{#each foods}}
+           <h2>{{name}}</h2>
+           <h4>{{texture}}</h4>
+           <p>{{pairing}}</p>
+      {{/each}}
+
+    </script>
 
 
     <!-- food script template ends here -->
 
 
-    <script id="song-template" type="text/x-handlebars-template">
+    <script id="songs-template" type="text/x-handlebars-template">
         {{#each songs}}
             <p>{{name}} by {{band}} on {{album}}</p>
         {{/each}}
@@ -43,6 +52,14 @@
 
     <!-- movie script template goes here -->
 
+    <script id="movies-template" type="text/x-handlebars-template">
+        {{#each movies}}
+            <h2>{{name}}</h2>
+           <h4>{{Director}}</h4>
+           {{#each Writers}}<p>{{name}}</p>{{/each}}
+           <p>{{Tagline}}</p>
+        {{/each}}
+    </script>
 
     <!-- movie script template ends here -->
 

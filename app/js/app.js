@@ -12,22 +12,28 @@ var favorites = (function(){
 
   var _renderFoods = function(foods){
     var template = Handlebars.compile($('#food-template').html());
-    $('#foods').html(template({
+    $('#food').html(template({
       foods: foods
     }));
   };
 
+
   var _renderMovies = function(movies){
     // your code starts here
-
+    var template = Handlebars.compile($('#movies-template').html());
+    $('#movie').html(template({
+      movies: movies
+    }));
 
     // your code ends here
   };
 
   var _renderSongs = function(songs){
     // your code starts here
-
-
+    var template = Handlebars.compile($('#songs-template').html());
+    $('#song').html(template({
+      songs: songs
+    }));
     // your code ends here
   };
 
